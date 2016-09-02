@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	interfaces (/etc/network/interfaces)
-" Maintaner:	François Wendling <frwending@free.fr>
+" Maintaner:	FranÃ§ois Wendling <frwending@free.fr>
 " Version:	0.1
 " Released under the terms of the GNU/GPL licence v2
 "
@@ -10,7 +10,7 @@ endif
 setlocal iskeyword+=-
 
 
-syn match interfacesComment /^#.*$/ contains=interfacesComment
+syn match interfacesComment /^\s*#.*$/ contains=interfacesComment
 syn keyword interfacesOpta address gateway netmask broadcast metric pointopoint media hwadress mtu hostname leasehours leasetime vendor client bootfile server hwaddr provider frame netnum endpoint local ttl network 
 syn keyword interfacesSpec mapping iface script auto up down pre-up post-down map contained
 syn keyword interfacesOptb inet static dhcp loopback bootp ppp wvdial v4tunnel manual 
